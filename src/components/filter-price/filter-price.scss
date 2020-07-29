@@ -1,0 +1,27 @@
+.filter-price {
+	width: 100%;
+	display: flex;
+	&__item {
+		@include fontFamily(600);
+		font-size: $fontSizeES;
+		padding: 15px 0;
+		flex-basis: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+		border: $borderFilterPrice;
+		background-color: $colorWhite;
+		transition: all 0.3s ease-in-out;
+		&:first-child {
+			@include borderLeftFilter(5px);
+		}
+		&:last-child {
+			@include borderRightFilter(5px);
+		}
+		&:hover,
+		&.active {
+			@include activeFilter();
+		}
+	}
+}

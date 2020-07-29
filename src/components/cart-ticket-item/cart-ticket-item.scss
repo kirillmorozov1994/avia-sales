@@ -1,0 +1,22 @@
+.cart-ticket-item {
+	width: 100%;
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	&-parts {
+		@include fontFamily(600);
+		width: calc(100% / 3);
+		& .item-up {
+			color: $colorSecondary;
+			font-size: $fontSizeES;
+			text-transform: uppercase;
+		}
+		& .item-down {
+			color: $colorDark;
+			font-size: $fontSizeM;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

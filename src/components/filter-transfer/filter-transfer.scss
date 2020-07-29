@@ -1,0 +1,20 @@
+.filter {
+	&-transfer {
+		@include shabowBox();
+		border-radius: 5px;
+		padding-bottom: 10px;
+		margin-right: 20px;
+		min-width: 232px;
+		&__title {
+			color: $colorDark;
+			text-transform: uppercase;
+			font-size: $fontSizeES;
+			width: 100%;
+			padding: 20px;
+			padding-bottom: 10px;
+		}
+		&__list {
+			list-style: none;
+		}
+	}
+}

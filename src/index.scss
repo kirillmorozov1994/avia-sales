@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import './utils/scss/variables';
+@import './utils/scss/mixins';
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background-color: $bgMainColor;
+	@include fontFamily($fontWeightBold);
+}
+
+@import './components/spinner/spinner';
+@import './components/app/app';
+@import './components/header/header';
+@import './components/filter-transfer/filter-transfer';
+@import './components/filter-transfer-item/filter-transfer-item';
+@import './components/filter-price/filter-price';
+@import './components/cart-ticket-item/cart-ticket-item';
+@import './components/cart-ticket/cart-ticket';
+@import './components/carts-tickets/carts-tickets';
+@import './components/error-boundry/error-boundry';

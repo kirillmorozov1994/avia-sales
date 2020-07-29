@@ -1,0 +1,13 @@
+.error-boundry {
+	text-align: center;
+	padding: 10px;
+	&__title {
+		margin-bottom: 10px;
+	}
+	& .filter-price__item {
+		margin: 0 auto;
+		border-radius: 5px;
+		padding: 20px;
+		width: 50%;
+	}
+}

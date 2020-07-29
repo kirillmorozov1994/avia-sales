@@ -1,0 +1,41 @@
+.filter {
+	&-item {
+		width: 100%;
+		@include fontFamily(400);
+		font-size: $fontSizeS;
+		display: flex;
+		align-items: center;
+		color: $colorDark;
+		&__label {
+			width: 100%;
+			padding: 10px 20px;
+			padding-left: 50px;
+			position: relative;
+			&:hover {
+				cursor: $customCursor;
+				background-color: $colorHover;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 20px;
+				transform: translateY(-50%);
+				width: 20px;
+				height: 20px;
+				border-radius: 2px;
+				border: $borderNotCheck;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		&__input {
+			display: none;
+			&:checked + .filter-item__label::after {
+				content: $customCheck;
+				border: $borderCheck;
+			}
+		}
+	}
+}

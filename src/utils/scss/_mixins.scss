@@ -1,0 +1,26 @@
+@mixin fontFamily($fontWeight) {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: $fontWeight;
+}
+
+@mixin shabowBox() {
+	box-shadow: $shadowCart;
+	background-color: $colorWhite;
+}
+
+@mixin borderLeftFilter($size) {
+	border-bottom-left-radius: $size;
+	border-top-left-radius: $size;
+}
+
+@mixin borderRightFilter($size) {
+	border-bottom-right-radius: $size;
+	border-top-right-radius: $size;
+}
+
+@mixin activeFilter() {
+	cursor: $customCursor;
+	border: $borderCheck;
+	background-color: $colorBorderCheck;
+	color: $colorWhite;
+}
