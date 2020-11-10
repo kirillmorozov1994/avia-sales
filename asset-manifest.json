@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/avia-sales/static/css/main.8f3db1f7.chunk.css",
+    "main.js": "/avia-sales/static/js/main.a4872aad.chunk.js",
+    "main.js.map": "/avia-sales/static/js/main.a4872aad.chunk.js.map",
+    "runtime-main.js": "/avia-sales/static/js/runtime-main.2acf2492.js",
+    "runtime-main.js.map": "/avia-sales/static/js/runtime-main.2acf2492.js.map",
+    "static/js/2.f19b7722.chunk.js": "/avia-sales/static/js/2.f19b7722.chunk.js",
+    "static/js/2.f19b7722.chunk.js.map": "/avia-sales/static/js/2.f19b7722.chunk.js.map",
+    "static/css/3.80e028c5.chunk.css": "/avia-sales/static/css/3.80e028c5.chunk.css",
+    "static/js/3.291a7b30.chunk.js": "/avia-sales/static/js/3.291a7b30.chunk.js",
+    "static/js/3.291a7b30.chunk.js.map": "/avia-sales/static/js/3.291a7b30.chunk.js.map",
+    "static/js/4.76ce7de6.chunk.js": "/avia-sales/static/js/4.76ce7de6.chunk.js",
+    "static/js/4.76ce7de6.chunk.js.map": "/avia-sales/static/js/4.76ce7de6.chunk.js.map",
+    "index.html": "/avia-sales/index.html",
+    "precache-manifest.d7fec188fbcdbebcc2dda5348f54bea9.js": "/avia-sales/precache-manifest.d7fec188fbcdbebcc2dda5348f54bea9.js",
+    "service-worker.js": "/avia-sales/service-worker.js",
+    "static/css/3.80e028c5.chunk.css.map": "/avia-sales/static/css/3.80e028c5.chunk.css.map",
+    "static/css/main.8f3db1f7.chunk.css.map": "/avia-sales/static/css/main.8f3db1f7.chunk.css.map",
+    "static/js/2.f19b7722.chunk.js.LICENSE.txt": "/avia-sales/static/js/2.f19b7722.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2acf2492.js",
+    "static/js/2.f19b7722.chunk.js",
+    "static/css/main.8f3db1f7.chunk.css",
+    "static/js/main.a4872aad.chunk.js"
+  ]
+}
