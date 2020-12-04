@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, createRef } from 'react'
+import React, { useEffect, useCallback, useRef } from 'react'
 import PropTypes from 'prop-types'
 import { observer, inject } from 'mobx-react'
 import FilterPrice from '../filter-price'
@@ -43,16 +43,23 @@ const CartsTickets = inject(
 			useEffect(() => {
 				requestInitialData()
 			}, [])
-			const observerCart = createRef()
+			const observerCart = useRef()
 			const lastCartTicket = useCallback(
 				(node) => {
 					if (observerCart.current) observerCart.current.disconnect()
-					observerCart.current = new IntersectionObserver((entries) => {
-						if (entries[0].isIntersecting && hasMore) {
-							setPage()
+					observerCart.current = new IntersectionObserver(
+						(entries) => {
+							if (entries[0].isIntersecting && hasMore) {
+								setPage()
+							}
+						},
+						{
+							threshold: 0.8,
 						}
-					})
-					if (node) observerCart.current.observe(node)
+					)
+					if (node) {
+						observerCart.current.observe(node)
+					}
 				},
 				[hasMore, page]
 			)

@@ -2,6 +2,7 @@
 	"name": "aviasales",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://kirillmorozov1994.github.io/avia-sales/",
 	"author": {
 		"name": "Kirill Morozov",
 		"url": "http://kirson123.ru",
@@ -38,6 +39,7 @@
 		"eslint-plugin-react-hooks": "^1.6.1",
 		"file-loader": "4.3.0",
 		"fs-extra": "^8.1.0",
+		"gh-pages": "^3.1.0",
 		"html-webpack-plugin": "4.0.0-beta.11",
 		"husky": "^4.2.5",
 		"identity-obj-proxy": "3.0.0",
@@ -81,7 +83,9 @@
 		"start": "node scripts/start.js",
 		"build": "node scripts/build.js",
 		"test": "node scripts/test.js",
-		"precommit": "lint-staged"
+		"precommit": "lint-staged",
+		"deploy": "gh-pages -d build",
+		"predeploy": "npm run build"
 	},
 	"browserslist": {
 		"production": [
